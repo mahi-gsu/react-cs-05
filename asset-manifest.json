@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-produce-filter/static/css/main.4e467e35.css",
+    "main.js": "/react-produce-filter/static/js/main.4541d2a7.js",
+    "index.html": "/react-produce-filter/index.html",
+    "main.4e467e35.css.map": "/react-produce-filter/static/css/main.4e467e35.css.map",
+    "main.4541d2a7.js.map": "/react-produce-filter/static/js/main.4541d2a7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e467e35.css",
+    "static/js/main.4541d2a7.js"
+  ]
+}
