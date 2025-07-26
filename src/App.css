@@ -1,0 +1,223 @@
+/* Custom Styling for React Produce Filter App */
+
+.App {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* HelloWorld Component Styling */
+h1 {
+  color: #4a4a4a;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Counter Component Styling */
+.counter {
+  background: linear-gradient(45deg, #ff6b6b, #ffa500);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.counter h1 {
+  color: white;
+  font-size: 3em;
+  margin: 10px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.counter .btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.counter .btn:hover {
+  background: white;
+  color: #ff6b6b;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* FilteredList Component Styling */
+.filter-list {
+  background: linear-gradient(45deg, #74b9ff, #0984e3);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 20px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.filter-list h1 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 2.2em;
+}
+
+/* Dropdown Button Styling */
+.dropdown {
+  margin: 15px 10px;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: 2px solid white !important;
+  color: white !important;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus,
+.dropdown-toggle:active {
+  background: white !important;
+  color: #74b9ff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Input Styling */
+input[type="text"] {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  margin: 10px;
+  font-size: 16px;
+  width: 250px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  transform: scale(1.02);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+input[type="text"]::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+li {
+  padding: 12px 20px;
+  margin: 5px 10px;
+  background: linear-gradient(45deg, #a8e6cf, #88d8a3);
+  border-radius: 8px;
+  color: #2d3436;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-left: 4px solid #00b894;
+}
+
+li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(45deg, #81ecec, #55efc4);
+}
+
+li:nth-child(even) {
+  background: linear-gradient(45deg, #fab1a0, #e17055);
+  border-left-color: #e84393;
+  color: white;
+}
+
+li:nth-child(even):hover {
+  background: linear-gradient(45deg, #fd79a8, #e84393);
+}
+
+/* Custom Scrollbar for List */
+ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+ul::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  input[type="text"] {
+    width: 200px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  .counter h1 {
+    font-size: 2.5em;
+  }
+}
+
+/* Animation for component entrance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container > * {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.container > *:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.container > *:nth-child(3) {
+  animation-delay: 0.4s;
+}
